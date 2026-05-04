@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Thiago Paiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho fixo com menu de navegação -->
+  <header class="topo">
+    <nav class="nav">
+      <h2 class="logo">Thiago <span>Paiva</span></h2>
+
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Botão hamburguer para celular -->
+      <div class="icone" onclick="abrirMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Seção inicial (hero) -->
+  <section id="inicio" class="inicio">
+    <div class="bola b1"></div>
+    <div class="bola b2"></div>
+
+    <div class="texto-inicio">
+      <p class="mini">PORTFÓLIO</p>
+      <h1>Olá, eu sou <span>Thiago Paiva</span></h1>
+      <p class="frase">
+        Estudante de Engenharia de Software, focado em aprender, evoluir
+        e construir minha trajetória na área de tecnologia.
+      </p>
+
+      <div class="botoes">
+        <a href="#projetos" class="btn">Ver projetos</a>
+        <a href="#contato" class="btn btn-outline">Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre mim -->
+  <section id="sobre" class="secao animar">
+    <h2>Sobre mim</h2>
+    <div class="linha"></div>
+
+    <div class="caixa">
+      <p>
+        Meu nome é Thiago Paiva e estou construindo minha trajetória na área de tecnologia.
+        Atualmente curso Engenharia de Software e busco evoluir cada vez mais por meio
+        de estudos, prática e projetos.
+      </p>
+      <p>
+        Tenho interesse em desenvolvimento de sistemas e quero conquistar oportunidades
+        para crescer profissionalmente, aprender mais e colocar meu conhecimento em prática.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção Objetivo -->
+  <section id="objetivo" class="secao animar">
+    <h2>Objetivo</h2>
+    <div class="linha"></div>
+
+    <div class="caixa">
+      <p>
+        Busco minha primeira oportunidade na área de tecnologia, com foco em desenvolvimento
+        de sistemas, para aprender na prática, ganhar experiência e evoluir profissionalmente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção Habilidades -->
+  <section id="habilidades" class="secao animar">
+    <h2>Habilidades</h2>
+    <div class="linha"></div>
+
+    <div class="habilidades">
+      <div class="item">HTML</div>
+      <div class="item">CSS</div>
+      <div class="item">JavaScript</div>
+      <div class="item">C#</div>
+      <div class="item">Lógica de Programação</div>
+      <div class="item">GitHub</div>
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="secao animar">
+    <h2>Projetos</h2>
+    <div class="linha"></div>
+
+    <div class="lista-projetos">
+
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Simulador Bancário em C#</h3>
+        <p>
+          Projeto desenvolvido para praticar operações bancárias simples,
+          estruturas condicionais e entrada de dados.
+        </p>
+        <a href="https://github.com/ThiagoPaivaX/Sistema_Banco_Simples" target="_blank" class="btn-card">Ver no GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Calculadora de Combustível</h3>
+        <p>
+          Projeto criado para calcular o valor gasto de combustível em viagens,
+          trabalhando lógica, cálculo e exibição de resultados.
+        </p>
+        <a href="https://github.com/ThiagoPaivaX/Calculador-de-Consumo" target="_blank" class="btn-card">Ver no GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Portfólio Web</h3>
+        <p>
+          Site desenvolvido com HTML, CSS e JavaScript para apresentar meu perfil,
+          minhas habilidades e meus projetos.
+        </p>
+        <a href="https://github.com/ThiagoPaivaX/Portfolio" target="_blank" class="btn-card">Ver no GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="num">04</span>
+        <h3>Sistema de Pontos Futebol</h3>
+        <p>
+          Simulador de partidas em C# onde o usuário informa os resultados de 5 rodadas
+          e o sistema calcula a pontuação e define o campeão.
+        </p>
+        <a href="https://github.com/ThiagoPaivaX/Sistema_PartidasFut_While" target="_blank" class="btn-card">Ver no GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="secao animar">
+    <h2>Contato</h2>
+    <div class="linha"></div>
+
+    <div class="caixa contato">
+      <h3>Vamos conversar</h3>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:dev.thiagopaiva@email.com">dev.thiagopaiva@email.com</a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/thiago-paiva-7905381ab/" target="_blank">
+          linkedin.com/in/thiago-paiva
+        </a>
+      </p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/ThiagoPaivaX" target="_blank">
+          github.com/ThiagoPaivaX
+        </a>
+      </p>
+
+      <div class="botoes">
+        <a href="mailto:dev.thiagopaiva@email.com" class="btn">Enviar email</a>
+        <a href="Thiago_Paiva.pdf" class="btn btn-outline" download>Baixar currículo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Thiago Paiva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
