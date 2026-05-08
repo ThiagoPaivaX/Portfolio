@@ -245,15 +245,18 @@ body {
 /* =====================
    Projetos
 ===================== */
+
+/* Grid com 3 colunas — organiza os cards em linhas de 3 */
 .lista-projetos {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .card {
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   background: #111a2e;
   padding: 35px 30px 30px;
   border-radius: 16px;
@@ -282,6 +285,7 @@ body {
   color: #38bdf8;
   margin-top: 30px;
   margin-bottom: 12px;
+  text-transform: capitalize;
 }
 
 .card p {
@@ -359,6 +363,17 @@ body {
 }
 
 /* =====================
+   Responsivo (tablet)
+===================== */
+@media (max-width: 900px) {
+
+  /* Projetos caem pra 2 colunas */
+  .lista-projetos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================
    Responsivo (celular)
 ===================== */
 @media (max-width: 850px) {
@@ -387,10 +402,15 @@ body {
 
   .inicio h1 {
     font-size: 34px;
-  }
+  }s
 
   .frase {
     font-size: 16px;
+  }
+
+  /* Projetos caem pra 1 coluna no celular */
+  .lista-projetos {
+    grid-template-columns: 1fr;
   }
 
   .card {
